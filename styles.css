@@ -1,5 +1,6 @@
 *{
-    padding: 10px;
+    padding: 3px;
+    margin: 0;
 }
 
 html {
@@ -41,8 +42,8 @@ nav{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
-    top: 5px;
-    left: 5px;
+    top: 0;
+    left: 0;
     z-index: 1000;
 }
 
@@ -132,6 +133,14 @@ nav ul img{
 @media(max-width: 800px){
     .hideOnMobile{
         display: none;
+    }
+
+    nav > ul > h1{
+        font-size: 26px;
+    }
+
+    body{
+        margin-top: 120px;
     }
 }
 
