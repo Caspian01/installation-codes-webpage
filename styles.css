@@ -105,8 +105,8 @@ nav h1{
     width: 250px;
     z-index: 999;
     background-color: rgba(255, 255, 255, 0.137);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0,0,0,0.1);
     display: none;
     flex-direction: column;
@@ -128,6 +128,22 @@ nav ul img{
     height: 75px;
     background-color: white;
     border-radius: 15px;
+}
+
+#refrigeration {
+    scroll-margin-top: 105px;
+}
+
+#range {
+    scroll-margin-top: 105px;
+}
+
+#homeLaundry {
+    scroll-margin-top: 105px;
+}
+
+#dishwasherDisposerCompactor {
+    scroll-margin-top: 105px;
 }
 
 
