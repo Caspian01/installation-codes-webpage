@@ -12,7 +12,47 @@ body{
     margin-top: 150px;
 }
 
-/* Table */
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+
+    nav > ul > h1{
+        font-size: 26px;
+    }
+
+    body{
+        margin-top: 120px;
+    }
+}
+
+button{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin-right: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.sidebar{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.137);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+}
+
+/* Tables */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -85,34 +125,9 @@ nav a{
     color: bisque;
 }
 
-.close-svg:hover {
-    fill: bisque;
-}
-
-.menu-svg:hover {
-    fill: bisque;
-}
-
 nav h1{
     font-size: 40px;
     margin-right: auto;
-}
-
-.sidebar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    background-color: rgba(255, 255, 255, 0.137);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
 }
 
 .sidebar li{
@@ -131,35 +146,6 @@ nav ul img{
     border-radius: 15px;
 }
 
-#refrigeration {
+#refrigeration, #range, #homeLaundry, #dishwasherDisposerCompactor{
     scroll-margin-top: 105px;
 }
-
-#range {
-    scroll-margin-top: 105px;
-}
-
-#homeLaundry {
-    scroll-margin-top: 105px;
-}
-
-#dishwasherDisposerCompactor {
-    scroll-margin-top: 105px;
-}
-
-
-@media(max-width: 800px){
-    .hideOnMobile{
-        display: none;
-    }
-
-    nav > ul > h1{
-        font-size: 26px;
-    }
-
-    body{
-        margin-top: 120px;
-    }
-}
-
-
